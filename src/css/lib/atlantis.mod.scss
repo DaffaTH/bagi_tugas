@@ -1,0 +1,76 @@
+.btn-toggle {
+	font-size: 21px !important;
+}
+
+.main-panel > .content {
+	min-height: calc(100% - 130px);
+	&.dashboard {
+		height: calc(100% - 130px);
+	}
+}
+
+.dropdown-user {
+	width: 240px;
+}
+
+.user-box .u-text {
+	flex-grow: 1;
+	overflow: hidden;
+	h4, p {
+		white-space: nowrap;
+		overflow: hidden;
+		width: 100%;
+		text-overflow: ellipsis;
+	}
+}
+
+.navbar-header {
+	transition: all .5s;
+	@media screen and (max-width: 991.98px) {
+		width: auto;
+		right: 0;
+		transform: none !important;
+		z-index: 1010;
+		&[data-background-color="blue2"] {
+			background: none !important;
+		}
+	}
+}
+
+a.text-secondary:focus, a.text-secondary:hover {
+	color: #7670d2 !important;
+}
+
+.logo-header {
+	font-size: 1.25rem;
+}
+
+.popover {
+	font-size: 12px;
+	.popover-header {
+		font-size: 12px;
+		padding-bottom: 0;
+	}
+}
+
+.dropdown-menu.quick-actions {
+	@media (max-width: 575.98px) {
+		transform: translateX(30px);
+		&::after {
+			transform: translateX(-30px);
+		}
+	}
+}
+
+.curves-shadow:before {
+	background-image: url('../img/curves-shadow.png');
+}
+
+.card {
+	.card-footer {
+		line-height: unset;
+	}
+	&-light .card-footer {
+		line-height: unset;
+	}
+}
